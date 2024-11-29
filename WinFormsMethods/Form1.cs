@@ -13,7 +13,7 @@ namespace WinFormsMethods
             clearForm();
         }
 
-       
+
 
         private void btnClear_Click(object sender, EventArgs e)
         {
@@ -53,7 +53,7 @@ namespace WinFormsMethods
             }
         }
 
-        
+
 
         private void btnBMI_Click(object sender, EventArgs e)
         {
@@ -74,7 +74,7 @@ namespace WinFormsMethods
              }*/
             double height = 0;
             double weight = 0;
-            if(CheckDouble(txtWeight, txtHeight))
+            if (CheckDouble(txtWeight, txtHeight))
             {
                 height = Convert.ToInt32(txtWeight.Text);
                 weight = Convert.ToInt32(txtWeight.Text);
@@ -82,7 +82,7 @@ namespace WinFormsMethods
 
             //Process คำนวณค่า BMI
             //double bmi = weight / Math.Pow(height / 100, 2);
-            double bmi = BMI(height,weight);
+            double bmi = BMI(height, weight);
             //Output แปลผล โดยนำค่า BMI มาเทียบค่ามาตรฐาน
             lblReslt.Text = bmi.ToString("0.00");
         }
@@ -102,18 +102,23 @@ namespace WinFormsMethods
             return bmi;
         }
 
-        private bool CheckDouble(TextBox txtW,TextBox txtH)
+        private bool CheckDouble(TextBox txtW, TextBox txtH)
         {
             double w = 0;
             double h = 0;
-             
-            if ((double.TryParse(txtW.Text, out w)==false)
-                || double.TryParse(txtH.Text, out h)== false) 
+
+            if ((double.TryParse(txtW.Text, out w) == false)
+                || double.TryParse(txtH.Text, out h) == false)
             {
                 MessageBox.Show("กรอกข้อมูลไม่ถูกต้อง", "เกิดข้อผิดพลาด");
                 return false;
             }
             return true;
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

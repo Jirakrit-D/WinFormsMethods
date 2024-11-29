@@ -35,30 +35,33 @@
             // txtResult
             // 
             txtResult.Font = new Font("Leelawadee UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtResult.Location = new Point(54, 44);
+            txtResult.Location = new Point(47, 33);
+            txtResult.Margin = new Padding(3, 2, 3, 2);
             txtResult.Multiline = true;
             txtResult.Name = "txtResult";
-            txtResult.Size = new Size(297, 480);
+            txtResult.Size = new Size(260, 361);
             txtResult.TabIndex = 0;
             // 
             // button1
             // 
             button1.Font = new Font("Leelawadee UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(427, 99);
+            button1.Location = new Point(374, 74);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(176, 75);
+            button1.Size = new Size(154, 56);
             button1.TabIndex = 1;
-            button1.Text = "GO! GO! GO!";
+            button1.Text = "GO! ";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
             // Form2
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(661, 579);
+            ClientSize = new Size(578, 434);
             Controls.Add(button1);
             Controls.Add(txtResult);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Form2";
             Text = "Method/Function";
             ResumeLayout(false);

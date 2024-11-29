@@ -48,7 +48,7 @@
             label1.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.Location = new Point(249, 43);
             label1.Name = "label1";
-            label1.Size = new Size(240, 32);
+            label1.Size = new Size(191, 26);
             label1.TabIndex = 0;
             label1.Text = "โปรแกมคำนวณ BMI";
             // 
@@ -58,7 +58,7 @@
             label2.Font = new Font("Leelawadee UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.Location = new Point(124, 219);
             label2.Name = "label2";
-            label2.Size = new Size(116, 31);
+            label2.Size = new Size(96, 25);
             label2.TabIndex = 1;
             label2.Text = "ส่วนสูง(cm)";
             // 
@@ -66,9 +66,9 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Leelawadee UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(122, 280);
+            label3.Location = new Point(123, 280);
             label3.Name = "label3";
-            label3.Size = new Size(118, 31);
+            label3.Size = new Size(97, 25);
             label3.TabIndex = 2;
             label3.Text = "น้ำหนัก(kg)";
             // 
@@ -77,24 +77,25 @@
             label4.AutoSize = true;
             label4.Location = new Point(117, 107);
             label4.Name = "label4";
-            label4.Size = new Size(123, 31);
+            label4.Size = new Size(103, 25);
             label4.TabIndex = 3;
             label4.Text = "ชื่อ-นามสกุล";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(192, 161);
+            label5.Location = new Point(179, 161);
             label5.Name = "label5";
-            label5.Size = new Size(48, 31);
+            label5.Size = new Size(41, 25);
             label5.TabIndex = 4;
             label5.Text = "อายุ";
+            label5.Click += label5_Click;
             // 
             // txtName
             // 
             txtName.Location = new Point(249, 104);
             txtName.Name = "txtName";
-            txtName.Size = new Size(241, 38);
+            txtName.Size = new Size(241, 32);
             txtName.TabIndex = 1;
             txtName.TextChanged += txtName_TextChanged;
             // 
@@ -102,7 +103,7 @@
             // 
             txtAge.Location = new Point(249, 158);
             txtAge.Name = "txtAge";
-            txtAge.Size = new Size(150, 38);
+            txtAge.Size = new Size(150, 32);
             txtAge.TabIndex = 2;
             txtAge.TextAlign = HorizontalAlignment.Right;
             txtAge.TextChanged += txtAge_TextChanged;
@@ -111,7 +112,7 @@
             // 
             txtHeight.Location = new Point(249, 219);
             txtHeight.Name = "txtHeight";
-            txtHeight.Size = new Size(150, 38);
+            txtHeight.Size = new Size(150, 32);
             txtHeight.TabIndex = 3;
             txtHeight.TextAlign = HorizontalAlignment.Right;
             // 
@@ -119,15 +120,15 @@
             // 
             txtWeight.Location = new Point(249, 277);
             txtWeight.Name = "txtWeight";
-            txtWeight.Size = new Size(150, 38);
+            txtWeight.Size = new Size(150, 32);
             txtWeight.TabIndex = 4;
             txtWeight.TextAlign = HorizontalAlignment.Right;
             // 
             // btnBMI
             // 
-            btnBMI.Location = new Point(505, 161);
+            btnBMI.Location = new Point(505, 107);
             btnBMI.Name = "btnBMI";
-            btnBMI.Size = new Size(127, 78);
+            btnBMI.Size = new Size(155, 95);
             btnBMI.TabIndex = 5;
             btnBMI.Text = "ค่า BMI";
             btnBMI.UseVisualStyleBackColor = true;
@@ -135,20 +136,20 @@
             // 
             // lblReslt
             // 
-            lblReslt.BackColor = Color.Aqua;
-            lblReslt.ForeColor = Color.Red;
-            lblReslt.Location = new Point(31, 337);
+            lblReslt.BackColor = Color.MediumSeaGreen;
+            lblReslt.ForeColor = Color.Black;
+            lblReslt.Location = new Point(12, 337);
             lblReslt.Name = "lblReslt";
-            lblReslt.Size = new Size(666, 242);
+            lblReslt.Size = new Size(707, 242);
             lblReslt.TabIndex = 10;
             lblReslt.Text = "---";
             lblReslt.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnClear
             // 
-            btnClear.Location = new Point(505, 262);
+            btnClear.Location = new Point(505, 219);
             btnClear.Name = "btnClear";
-            btnClear.Size = new Size(127, 49);
+            btnClear.Size = new Size(155, 63);
             btnClear.TabIndex = 11;
             btnClear.Text = "เริ่มใหม่";
             btnClear.UseVisualStyleBackColor = true;
@@ -156,7 +157,7 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(13F, 31F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(731, 588);
             Controls.Add(btnClear);
